@@ -8,7 +8,7 @@ from io import BytesIO
 
 # --- Setup Gemini AI function that can be reused across pages ---
 def setup_gemini():
-    API_KEY = "AIzaSyDfvul2fjvk1Q0y8lqqzaMrsyt0GvlFrN0"  
+    API_KEY = "YOUR_GEMINI_API_KEY_HERE"  
     genai.configure(api_key=API_KEY) 
     model = genai.GenerativeModel("gemini-1.5-flash")  # Using Flash model
     return model
